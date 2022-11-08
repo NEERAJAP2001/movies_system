@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <form action="" method="post">
+        {% csrf_token %}
+        {{form3}}
+        {{l}}
+        {% for i in temp %}
+        <input type="checkbox" name="check" value="{{i.id}}">{{i}} <br>
+
+        {% endfor %}
+        <input type="submit" value="Submit">
+    </form>
+
+    
+</head>
+<body>
+    
+</body>
+</html>
